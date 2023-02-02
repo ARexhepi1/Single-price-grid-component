@@ -1,0 +1,164 @@
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6eff5;
+}
+
+h2 h3 {
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  width: 311px;
+  height: 722px;
+  box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+}
+
+.community {
+  background-color: #ffffff;
+  padding: 28px 24px 0 24px;
+}
+
+.comheading {
+  font-size: 20px;
+  padding-bottom: 24px;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+  color: var(--Cyan);
+}
+
+.comsubheading {
+  font-size: 15px;
+  color: var(--Bright-Yellow);
+  padding-bottom: 16px;
+}
+
+.comdescription {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--Grayish-Blue);
+  padding-bottom: 32px;
+}
+
+.subscription {
+  background-color: var(--Cyan);
+  background-size: contain;
+  padding: 24px;
+}
+
+.subheading {
+  font-size: 18px;
+  color: #ffffff;
+  padding-bottom: 18px;
+}
+
+.subsubheading {
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.month {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.subdescription {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+.btn {
+  width: 263px;
+  height: 48px;
+  border-radius: 5px;
+  background-color: var(--Bright-Yellow);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+  mqrgin-bottom: 24px;
+}
+
+.btn:hover {
+  transition: 0.1s ease-in-out;
+  background-color: rgba(255, 255, 0, 0.567);
+}
+
+.whyus {
+  background-color: #4abfbd;
+  padding: 24px;
+  color: #ffffff;
+}
+
+.whyheading {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.whydescription {
+  font-size: 14px;
+  opacity: 0.75;
+  line-height: 20px;
+  letter-spacing: -0.175px;
+  padding-right: 49px;
+  padding-bottom: 24px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 635px;
+    height: 475px;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgb(177, 175, 175);
+  }
+
+  .subwhy {
+    display: flex;
+    min-width: 100%;
+  }
+  .comheading {
+    font-size: 24px;
+  }
+
+  .comsubheading {
+    font-size: 18px;
+  }
+
+  .comdescription {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .community {
+    padding: 40px 40px 0 40px;
+  }
+  .subscription {
+    padding: 40px;
+  }
+  .whyus {
+    padding: 40px;
+  }
+}
